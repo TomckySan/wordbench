@@ -2,11 +2,14 @@
 <html lang="ja">
   <head>
     <meta charset=utf-8>
-    <script src="./geolocation-sample.js"></script>
-    <title>Geolocation API Sample</title>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=true_or_false"></script>
+    <script src="./googlemaps-sample.js"></script>
+    <title>Google Maps API Sample</title>
   </head>
   <body>
-    <p>現在の位置情報はこんなカンジですよ</p>
-    <div id="current_info">
+    <p>目的地：<input type="text" name="target" class="input-address" size="30" maxlength="30"></p>
+    <div id="map" style="width:600px; height:600px;">
     </div>
+    <p class="result"></p>
   </body>
