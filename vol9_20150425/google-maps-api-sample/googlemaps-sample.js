@@ -25,9 +25,6 @@
       map = new google.maps.Map(document.getElementById('map'), opt);
     }
 
-    /**
-     *
-     */
     var success = function(pos) {
       if (currentMarker) { currentMarker.setMap(null); }
       curLat = pos.coords.latitude;
@@ -40,9 +37,6 @@
       });
     };
 
-    /**
-     *
-     */
     var error = function(err) {
       alert('ERROR! (' + err.code + ' : ' + err.message + ')');
     };
